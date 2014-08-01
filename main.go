@@ -33,9 +33,7 @@ func main() {
 	goweb.Map("/user/{username}/contacts", contactsHandler)
 	goweb.Map("/user/{username}/contact/{contactname}", contactHandler)
 	goweb.Map("/user/{username}/preferences", preferencesHandler)
-	// goweb.Map("/user/{username}/preference/{prefname}", preferenceHandler)
 	goweb.Map("/user/{username}/notifications", notificationsHandler)
-	// goweb.Map("/user/{username}/notification/{id}", notificationHandler)
 	goweb.Map("/user/{username}/location", locationHandler)
 	goweb.Map("/user/{username}/location/{lat}/{lon}", locationHandler)
 
